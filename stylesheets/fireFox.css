@@ -1,0 +1,348 @@
+.nav{
+    width: 100%;
+    height: 30px;
+    background:#2C6787;
+}
+.nav:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.sprit{
+    margin-left: 400px;
+    height: 130%;
+    width: 410px;
+}
+.bac {
+    width: 37px;
+    height: 35px;
+    background: url("../img/logo_sprite_2014.png") no-repeat 0 0;
+}
+.sprit>span{
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 30px;
+    margin-top: -40px;
+}
+.sprit>span:after{
+
+}
+.sprit span a{
+    color: #ffffff;
+    font-weight:normal;
+    font-size:12px;
+    padding-left: 22px;
+    padding-right: 40px;}
+.skin{
+    margin-left: -25px;
+    margin-top: -6px;
+    background: url('../img/skin_icon_sprite_2014.png') no-repeat 0 -31px;
+    width: 89px;
+    height: 11px;
+}
+.hoxi{
+    float: right;
+    margin-top:-35px;
+    margin-right: 430px;
+}
+.hoxi li{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+}
+
+.hoxi li a{
+    color: #ffffff;
+    font-size: 12px;
+}
+.hoxi:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.baidu{
+    background: url('../img/logo_sprite_2014.png') no-repeat -1px -66px;
+    width: 117px;
+    height: 38px;
+    margin-top: 30px;
+    margin-right: 30px;
+    margin-left: 600px;
+}
+.fl:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.mynav li{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+}
+.mynav li a{
+    color: #5B6475;
+    font-size: 12px;
+}
+.mynav li a.cRed{
+    color: red;
+}
+.mynav li a:hover{
+    color: #FF9500;
+}
+.mynav:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.fr{float: right}
+.fl{float: left}
+.input-append input{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-color: #E54724;
+}
+.input-append a{
+    padding:13px 25px ;
+    background: #E54724;
+}
+.newNav li{
+    float: left;
+    list-style: none;
+    padding-right: 20px;
+}
+.newNav{
+    margin-left: 0px;
+}
+.newNav li a{
+    color: #809BA9;
+    font-size: 12px;
+}
+.newNav li a:hover{
+    color: #FF9500;
+}
+.newNav:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.clear{
+    clear: both;
+}
+.c777779{
+    color: #777779;
+}
+.row{
+    margin-left: 400px;
+    margin-top: -20px;
+}
+.h60{
+    height: 60px;
+}
+.span8Ul li{
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+}
+.span8Ul:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.span8Ul.ml0{
+    margin-left: 0px;}
+.span8Ul li a{
+    color: #000000;
+    text-decoration: none;
+}
+.span8Ul li a:hover{
+    color: red;
+}
+.bcECF0F1{background: #ECF0F1}
+.spe{
+    background: url("../img/201509281012430.png");
+    width: 250px;
+    height: 35px;
+}
+.loop{
+    height: 68px;
+    border-bottom: 1px solid green;
+}
+.w230{
+    width: 230px;
+}
+.loop:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+.white{background: #ffffff}
+.newLI{
+    width: 100%;
+    margin-left: 0px;
+}
+.point{
+    background: url('../img/icon_sprite_2014.png') no-repeat -218px -300px;
+    width: 3px;
+    height: 3px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.newLI li{
+    padding-top: 10px;
+}
+.newLI li a{
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+.newLI li a:hover{
+    color: red;
+}
+.bor{    border: 1px solid #D8DCDD;}
+.mt_20{
+    margin-top: -20px;
+}
+.span1 a{color: #000000}
+.new li a{
+    font-size: 14px;
+    color: #000000;
+    text-decoration: none;
+}
+.new li{
+    padding-top: 10px;
+}
+.new li a:hover{
+    color: red;
+}
+.mb0{
+    margin-bottom: 0px;
+}
+.h87{
+    height: 87px;
+}
+.fz12{
+    font-size: 12px;
+}
+.nowrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.c777779{
+    color: #777779;
+}
+.w170{
+    width: 170px;
+}
+.red{background: red}
+.cffffff{
+    color: #ffffff;
+}
+.Lipt20 li{
+    padding-top: 10px;}
+.h45{
+    height: 45px;}
+.borE2E6E7{
+    border:1px solid #E2E6E7;
+}
+.titleValue {
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    line-height: 45px;
+}
+.mainPic{
+    width: 422px;
+    height: 274px;
+}
+.picCenter{
+    width: 1226px;
+    margin: 0 auto;
+
+}
+.handw{
+    height: 126px;
+    width: 200px;
+}
+.nav-tabs{
+    background: #EEF2F3;
+}
+.bor_cor{
+    border-top: 1px solid #D8DCDD;
+    border-right: 1px solid #D8DCDD;
+    border-left: 1px solid #D8DCDD;
+
+}
+.img-text{
+    position: relative;
+    background: rgba(0,0,0,0.6);
+    top: -27px;
+    padding:3px 5px;
+}
+.w410{
+    width: 410px;
+}
+.w190{
+    width: 190px;
+}
+.img-text a{
+    color: #ffffff;
+    font-size: 12px;
+}
+.img-text a:hover{
+    color: yellowgreen;
+}
+.cBlack > a{
+    color: #000;}
+.i_class{
+    float: right;
+    color: #FF9500;
+    padding-right: 30px;
+}
+.Lipt20 li a{
+    color: #000000;
+    font-size: 12px;
+}
+.Lipt20 li a:hover{
+    color: #FF9500;
+}
+.pic{
+    display: inline-block;
+    background: url('../img/icon_sprite_2014.png') no-repeat -55px -178px;
+    width: 11px;
+    height: 6px;
+    position: relative;
+    left: -90px;
+    top: 20px;
+    z-index: 10;
+}
+.hideDiv{
+    background: #ffffff;
+    position: absolute;
+    z-index: 14;
+    width: 460px;
+    top: 80px;
+    left: -25px;
+    display: none;
+}
+.hideDiv li{
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.hideDiv li a{
+    color: #000000;
+}
+.bc000000{
+    background:#000000;
+}
+.posit{position: relative}
+.changeaLitter{
+    margin-left: 60px;
+}
+.newNav .changeaLitter a{
+    color: #FF9500;
+    font-weight: bold;
+}
