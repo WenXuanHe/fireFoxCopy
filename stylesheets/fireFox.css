@@ -104,6 +104,8 @@
 }
 .input-append a{
     padding:13px 25px ;
+    +padding:16px 25px; /* ie7，ie6识别*/
+    +margin-top:1px; /* ie7，ie6识别*/
     background: #E54724;
 }
 .newNav li{
@@ -142,7 +144,6 @@
 .span8Ul li{
     list-style: none;
     float: left;
-    padding-right: 20px;
 }
 .span8Ul:after{
     display: block;
@@ -185,9 +186,12 @@
     background: url('../img/icon_sprite_2014.png') no-repeat -218px -300px;
     width: 3px;
     height: 3px;
-    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
+    /*display: inline-block;  ie7不支持此属性， 用下面3个替代*/
+    float: left;
+    position: relative;
+    top: 10px;
 }
 
 .newLI li{
