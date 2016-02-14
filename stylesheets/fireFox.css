@@ -209,6 +209,7 @@
 .mt_20{
     margin-top: -20px;
 }
+.relative{position: relative}
 .span1 a{color: #000000}
 .new li a{
     font-size: 14px;
@@ -263,10 +264,11 @@
     height: 274px;
 }
 .picCenter{
-    width: 1226px;
-    margin: 0 auto;
-
+    width: 1152px;
+    margin-left: 318px;
+    margin-top: -20px;
 }
+.auto{margin: 0 auto}
 .handw{
     height: 126px;
     width: 200px;
@@ -281,11 +283,12 @@
 
 }
 .img-text{
-    position: relative;
+    position: absolute;
     background: rgba(0,0,0,0.6);
-    top: -27px;
     padding:3px 5px;
+    bottom: -10px;
 }
+.ml13{margin-left: 13px;}
 .w410{
     width: 410px;
 }
@@ -304,15 +307,21 @@
 .i_class{
     float: right;
     color: #FF9500;
-    padding-right: 30px;
 }
 .Lipt20 li a{
     color: #000000;
     font-size: 12px;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 300px;
 }
 .Lipt20 li a:hover{
     color: #FF9500;
 }
+.Lipt20{
+    margin: 0;}
 .pic{
     display: inline-block;
     background: url('../img/icon_sprite_2014.png') no-repeat -55px -178px;
@@ -350,3 +359,32 @@
     color: #FF9500;
     font-weight: bold;
 }
+.usePatton{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #777779;
+}
+.row-fluid-size{
+    width: 1748px;
+    margin-left: 20px;
+}
+.pl18{    padding-left: 18px;}
+.mb21{    margin-bottom: 21px;}
+.realPos{
+    margin-left: 20px;
+    position: relative;
+    margin-bottom: 21px;
+    float: left;
+}
+.travel-left, .game-left{
+    width: 680px;
+}
+.travel-right, .game-right{
+    width: 400px;
+}
+.picCenter>div{
+    float: left;
+}
+

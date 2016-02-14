@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--流式的嵌套布局-->
+    div.row-fluid>div.span12>div.row-fluid>((div.span6>div.row-fluid>div.span6*2)+div.span6)
+    <!--流式布局-->
+    div.container-fluid>div.row-fluid>(div.span2+div.span8)
+    <!--要突出一个段落只需加.load-->
+    p.load
+    <!--文字对齐-->
+    p.text-left
+    p.text-center
+    p.text-right
+    <!--强调属性（颜色）-->
+    p.text-success
+    p.text-error
+    p.text-warning
+    p.text-muted
+    p.text-info
+    <!--缩写-->
+    abbr[title="完整词"]>"缩写词"
+    <!--对一个列表进行描述-->
+    dl>(dt+dd)
+    <!--水平状态的描述-->
+    dl.dl-horizontal>(dt+dd)
+    <!--表格-->
+    table.table
+    <!--背景交替的表格-->
+    table.table.table-striped
+    <!--有边线的表格-->
+    table.table.table-bordered
+    <!--有滑动效果的表格-->
+    table.table.table-hover
+    <!--紧凑表格-->
+    table.table.table-condensed
+    <!--可选的行属性-->
+    tr.success tr.error tr.warning tr.info
+    <!--点击我-->
+    label.checkbox>input[type="checkbox"]
+    <!--表单可选布局-->
+    <!--1，搜索式， 可为输入框加一个圆角-->
+    form.form-search>input.search-query
+    <!--2， 内联式-->
+    form.form-inline
+    <!--3， 水平式
+    1,在表单中加.form-horizontal
+    2,把标签和控件包含在control-group
+    3,在标签添加control-label
+    4，为任何关联的控件添加controls老确保位置正确
+    -->
+    form.form-horizontal>div.control-group>label.control-label+div.controls>input[type="text"]
+    <!--扩展表单控件
+        把.add-on放在input前面或后面都可以
+    -->
+    div.input-prepend>(span.add-on+input.span2)
+    div.input-append>(input.span2+span.add-on)
+    div.input-append.input-prepend>(span.add-on+input.span2+span.add-on)
+    <!--按钮代替文本-->
+    div.input-prepend>(button.btn+input.span2)
+    <!--按钮式下拉菜单-->
+    div.btn-group>((button.btn.dropdown-toggle[tata-toggle='dropdown']>span.caret)+ul.dropdown-menu>li*3)
+    <!--控制输入框和表单控件的大小-->
+    .input-large and .span*
+    <!--每行有多个输入框，使用control-row为输入框直接加入适当的距离-->
+    div.control-row.controls>(input.span4[type='text']+input.span2[type="text"])
+    <!--不可编辑的输入框无需使用实际的表单标记-->
+    span.uneditable-input>'wenben'
+    input[require] input[disabled]
+    <!--图像-->
+    <!--在任何项目中可以轻松改变图片的样式， 只需在image元素中加属性-->
+    img.img-rounded  img.img-circle img.img-polaroid
+
+</body>
+</html>
