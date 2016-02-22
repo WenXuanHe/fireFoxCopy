@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--禁止缩放-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/bootstrap3/css/bootstrap-theme.min.css"/>
+    <style>
+        .row div{
+            border:1px solid burlywood;
+        }
+    </style>
+</head>
+<body>
+    <!--超小屏幕（《768px）-->
+        <!--.col-xs-*{}-->
+    <!--小屏幕（》768px）-->
+        <!--.col-sm-*-->
+    <!--中等屏幕 桌面显示器 (≥992px)-->
+        <!--.col-md--->
+    <!--大屏幕 大桌面显示器 (≥1200px)-->
+        <!--.col-lg--->
+
+    <!--使用 .col-md-offset-* 类可以将列向右侧偏移-->
+
+    <!--移动设备和桌面屏幕流式布局-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-xs-12">1</div>
+            <div class="col-md-4 col-xs-6"> 1</div>
+        </div>
+    </div>
+
+    <!--如果在一个 .row 内包含的列（column）大于12个，包含多余列（column）的元素将作为一个整体单元被另起一行排列。-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-xs-12">1</div>
+            <div class="col-md-2 col-xs-6">2</div>
+            <div class="col-md-3 col-xs-4">3</div>
+        </div>
+    </div>
+
+    <!--通过使用 .col-md-push-* 和 .col-md-pull-* 类就可以很容易的改变列（column）的顺序。-->
+    <div class="row">
+        <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+        <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+    </div>
+
+    <p>To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br>
+        To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+    </p>
+
+    <p><pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre></p>
+
+    <p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+
+    <p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+
+    <p><code>codecodecodecodecodecodecodecodecodecode</code></p>
+
+    <hr/>
+    <dl class="dl-horizontal">
+        <dt>wenxuan</dt>
+        <dd>21</dd>
+        <dd>1650</dd>
+        <dt>qw</dt>
+        <dd>223</dd>
+    </dl>
+    <hr/>
+
+    <table class="table table-striped ">
+        <tr class="danger">
+            <td>#</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Username</td>
+        </tr>
+        <tr class="info">
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+    </table>
+    <!--表格的属性-->
+    <table class="table table-hover table-condensed">
+        <tr class="active">
+            <td>#</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Username</td>
+        </tr>
+        <tr class="success">
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr class="warning">
+            <td> 3</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+    </table>
+
+    <!--响应式表格 其会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失。-->
+    <table class="table table-responsive ">
+        <tr class="danger">
+            <td>#会在小屏幕设备上（小于768px）水平滚动。当屏幕大于 768px 宽度时，水平滚动条消失</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Username</td>
+        </tr>
+        <tr class="info">
+            <td>1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+        </tr>
+        <tr>
+            <td> 3</td>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+        </tr>
+    </table>
+
+    <!--内联表单-->
+    <form class="form-inline" action="">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-addon"><label for="11">$</label></div>
+                <input type="text" id="11" class="form-control" placeholder="11"/>
+                <div class="input-group-addon">.00</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="33">232323</label>
+            <input id="33" class="form-control" type="text" placeholder="33"/>
+        </div>
+    </form>
+    <br/>
+    <!--水平排列的表单-->
+    <!--通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 label 标签和控件组水平并排布局。-->
+    <!--这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了-->
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label  class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <select class="form-control">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+                <!--<input type="password" class="form-control" id="inputPassword3" placeholder="Password">-->
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+    </form>
+
+    <form action="">
+
+    </form>
+    <form class="form-horizontal">
+        <div class="form-group has-success has-feedback">
+            <label class="control-label col-sm-1" for="inputSuccess2">Input with success</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span id="inputSuccess2Status" class="sr-only">(success)</span>
+            </div>
+        </div>
+        <div class="form-group has-warning has-feedback">
+            <label class="control-label" for="inputWarning2">Input with warning</label>
+            <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+            <span id="inputWarning2Status" class="sr-only">(warning)</span>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label class="control-label" for="inputError2">Input with error</label>
+            <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+            <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+            <span id="inputError2Status" class="sr-only">(error)</span>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+            </div>
+            <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+            <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+        </div>
+
+    </form>
+
+    <form action="">
+        <input class="form-control input-lg" type="text" placeholder=".input-lg">
+        <input class="form-control" type="text" placeholder="Default input">
+        <input class="form-control input-sm" type="text" placeholder=".input-sm">
+        <button type="button" class="btn btn-primary btn-lg btn-block">（块级元素）有btn-block</button>
+        <button type="button" class="btn btn-default btn-lg ">（块级元素）无btn-block</button>
+    </form>
+
+    <div>
+        <img src="img/1.jpg" alt="..." width="100" class="img-rounded">
+        <img src="img/1.jpg" alt="..."  width="100" class="img-circle">
+        <img src="img/1.jpg" alt="..."  width="100" class="img-thumbnail">
+    </div>
+    <div class="bs-example" data-example-id="contextual-colors-helpers">
+        <p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+        <p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+        <p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+
+    <div class="bs-example bs-example-bg-classes" data-example-id="contextual-backgrounds-helpers">
+        <p class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        <p class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        <p class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+        <p class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+    </div>
+    <!--关闭按钮-->
+    <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <!--三角符号-->
+    <span class="caret"></span>
+    <script type="text/javascript" src="javascripts/common/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="stylesheets/bootstrap3/js/bootstrap.min.js"></script>
+</body>
+</html>
